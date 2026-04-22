@@ -204,7 +204,57 @@
   font-weight: 500;
 }
 
+ /* ── Tablet ── */
 @media (max-width: 860px) {
-  .grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .formRow { grid-template-columns: 1fr; }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .formRow {
+    grid-template-columns: 1fr;   /* stack name/email fields */
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .contact {
+    padding: 4rem 0;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .infoCard {
+    padding: 0.85rem 1rem;
+    transform: none !important;   /* disable slide on touch */
+  }
+
+  .infoIcon {
+    font-size: 1.2rem;
+    width: 28px;
+  }
+
+  .infoValue {
+    font-size: 0.78rem;           /* prevent long emails overflowing */
+    word-break: break-all;
+  }
+
+  .form {
+    padding: 1.25rem;             /* tighter form padding */
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    font-size: 1rem;              /* prevents iOS auto-zoom on focus */
+    padding: 0.65rem 0.85rem;
+  }
+
+  .availability {
+    padding: 1rem;
+  }
+
+  .availDesc {
+    font-size: 0.75rem;
+  }
 }

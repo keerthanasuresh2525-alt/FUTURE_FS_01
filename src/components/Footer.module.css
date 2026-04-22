@@ -117,3 +117,33 @@
   .inner { grid-template-columns: 1fr; gap: 2rem; }
   .bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 5vw 0;
+  }
+
+  .inner {
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .tagline {
+    font-size: 0.82rem;
+    max-width: 100%;
+  }
+
+  .navLabel {
+    font-size: 0.68rem;
+  }
+
+  .navLink,
+  .infoList li {
+    font-size: 0.82rem;
+  }
+
+  .bottom {
+    font-size: 0.75rem;
+    gap: 0.35rem;
+  }
+}

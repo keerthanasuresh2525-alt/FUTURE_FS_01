@@ -156,6 +156,47 @@
 
 .moreLink { text-align: center; }
 
-@media (max-width: 640px) {
-  .grid { grid-template-columns: 1fr; }
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .projects {
+    padding: 4rem 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;   /* single column on phones */
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.25rem;             /* tighter card padding */
+  }
+
+  .card:hover {
+    transform: none;              /* disable hover lift on touch screens */
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardDesc {
+    font-size: 0.85rem;
+  }
+
+  .filters {
+    gap: 0.4rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .filterBtn {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.9rem;
+  }
 }

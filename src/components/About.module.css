@@ -111,7 +111,47 @@
   background: rgba(37,99,176,0.15);
 }
 
+/* ── Tablet ── */
 @media (max-width: 860px) {
-  .grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .facts { grid-template-columns: 1fr; }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .facts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .about {
+    padding: 4rem 0;        /* less top/bottom space on mobile */
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .bioCard {
+    padding: 1.25rem;       /* tighter card padding */
+  }
+
+  .bioText p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+
+  .facts {
+    grid-template-columns: 1fr;   /* stack facts vertically */
+    gap: 0.5rem;
+  }
+
+  .skillGroup {
+    padding: 1rem 1.25rem;
+  }
+
+  .pill {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+  }
 }

@@ -120,3 +120,47 @@
 .downloadBtn:hover {
   background: rgba(99,102,241,0.3);
 } 
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+    gap: 0.75rem;
+  }
+
+  .card:hover {
+    transform: none;              /* disable lift on touch */
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .companyRow {
+    flex-wrap: wrap;              /* wrap if company + duration too long */
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .downloadBtn {
+    width: 100%;                  /* full width for easy tapping */
+    justify-content: center;
+  }
+}
